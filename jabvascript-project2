@@ -13,17 +13,7 @@
   <button id="submitBtn">Submit</button>
   <ul id="outputList"></ul>
 
-  <script src="script.js"></script>
-</body>
-</html>
-
-
-
-
-
-<!................................java script file --------------------------------------------->
-
-
+<script>
 const userInput = document.getElementById('userInput');
 const submitBtn = document.getElementById('submitBtn');
 const outputList = document.getElementById('outputList');
@@ -38,3 +28,6 @@ submitBtn.addEventListener('click', function() {
     userInput.value = '';
   }
 });
+</script>
+</body>
+</html>
