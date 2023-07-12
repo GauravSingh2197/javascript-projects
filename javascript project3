@@ -49,15 +49,7 @@
 
     <button type="submit">Submit</button>
   </form>
-
-  <script src="script.js"></script>
-</body>
-</html>
-
-
-
-<!--------------------------------------------------java script file ---------------------------------------------------------------->
-
+<script>
 function validateForm(event) {
   event.preventDefault();
 
@@ -177,3 +169,7 @@ function validateColor(color) {
   // Validation logic for color
   return color !== '#000000';
 }
+
+</script>
+</body>
+</html>
