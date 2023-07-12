@@ -1,0 +1,19 @@
+const promise = new Promise((resolve, reject) => {
+  // Simulating an asynchronous task
+  setTimeout(() => {
+    const randomNum = Math.random();
+    if (randomNum > 0.5) {
+      resolve(randomNum);
+    } else {
+      reject(new Error("Random number is too small"));
+    }
+  }, 1000);
+});
+
+promise
+  .then((result) => {
+    console.log("Promise fulfilled:", result);
+  })
+  .catch((error) => {
+    console.log("Promise rejected:", error.message);
+  });
