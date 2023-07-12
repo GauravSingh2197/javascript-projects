@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Input App</title>
+  <style>
+    #userInput {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <input id="userInput" type="text" placeholder="Type something">
+  <button id="submitBtn">Submit</button>
+  <ul id="outputList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+<!................................java script file --------------------------------------------->
+
+
+const userInput = document.getElementById('userInput');
+const submitBtn = document.getElementById('submitBtn');
+const outputList = document.getElementById('outputList');
+
+submitBtn.addEventListener('click', function() {
+  const inputText = userInput.value.trim();
+
+  if (inputText !== '') {
+    const listItem = document.createElement('li');
+    listItem.textContent = inputText;
+    outputList.appendChild(listItem);
+    userInput.value = '';
+  }
+});
